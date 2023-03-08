@@ -11,13 +11,7 @@ export const App = () => {
   return (
     <main className="wrapper">
       <Header />
-      <div className="App">
-        {data.albums.items.map((singleAlbum) => (
-          <AlbumCard key={singleAlbum.id} album={singleAlbum} />
-        ))};
-      </div>
+      <AlbumCard />
     </main>
   );
 }
-
-// data.map((album) => (<div><AlbumCard name={album.albums.items.name} /></div>))}

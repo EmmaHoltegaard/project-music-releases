@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { createRoot } from 'react-dom';
 import './index.css';
 import React from 'react';
