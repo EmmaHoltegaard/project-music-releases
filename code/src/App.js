@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
-import { AlbumCard } from 'components/AlbumCard'; // Ask Daniel on thursday why this has to be above the Header
+import { AlbumList } from 'components/AlbumList'; // Ask Daniel on thursday why this has to be above the Header
 import { Header } from './components/Header';
 
 import data from './data.json';
@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <main className="wrapper">
       <Header />
-      <AlbumCard />
+      <AlbumList newReleases={data} />
     </main>
   );
 }
