@@ -2,5 +2,5 @@
 import React from 'react';
 
 export const AlbumTitle = () => {
-  return <div>Artist Title</div>
+  return <div>Album Title</div>
 }

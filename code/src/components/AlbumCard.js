@@ -1,17 +1,14 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
-import { AlbumArtist } from './AlbumArtist'
+import { AlbumArtist } from './AlbumArtist';
+import { Icons } from './Icons';
 
 export const AlbumCard = (props) => {
   return (
     <article>
       <div className="image-wrapper">
-        <img alt="album cover" />
-        <div className="icon-wrapper">
-          <img alt="icon" />
-          <img alt="icon" />
-          <img alt="icon" />
-        </div>
+        <img src={props.albumDetails.images[1].url} alt="album cover" />
+        <Icons />
       </div>
       <h2 className="album-name">{props.albumDetails.name}</h2>
       <h3 className="artist-name">
