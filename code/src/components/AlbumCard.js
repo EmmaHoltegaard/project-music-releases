@@ -1,12 +1,10 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 import { AlbumArtist } from './AlbumArtist'
-import { AlbumTitle } from './AlbumTitle'
 
-export const AlbumCard = () => {
+export const AlbumCard = (props) => {
   return (
     <article>
-      <h2>Album Card</h2>
       <div className="image-wrapper">
         <img alt="album cover" />
         <div className="icon-wrapper">
@@ -15,8 +13,14 @@ export const AlbumCard = () => {
           <img alt="icon" />
         </div>
       </div>
-      <AlbumArtist />
-      <AlbumTitle />
+      <h2 className="album-name">{props.albumDetails.name}</h2>
+      <h3 className="artist-name">
+        {props.albumDetails.artists.map((artist) => {
+          return (
+            <AlbumArtist key={artist.id} artistDetails={artist} />
+          )
+        })}
+      </h3>
     </article>
   )
 }
