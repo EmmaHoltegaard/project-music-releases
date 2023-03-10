@@ -5,12 +5,12 @@ import { AlbumCard } from 'components/AlbumCard'; // Ask Daniel on thursday why 
 export const AlbumList = (props) => {
   console.log('the album list is here')
   return (
-    <section className="album-list-wrapper">
+    <div className="album-list-wrapper">
       {props.newReleases.albums.items.map((singleAlbum) => {
         return (
           <AlbumCard key={singleAlbum.id} albumDetails={singleAlbum} />
         )
       })}
-    </section>
+    </div>
   );
 }

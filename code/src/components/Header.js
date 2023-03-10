@@ -2,5 +2,5 @@
 import React from 'react';
 
 export const Header = () => {
-  return <h1>New Releases</h1>
+  return <header><h1>New Releases</h1></header>
 }

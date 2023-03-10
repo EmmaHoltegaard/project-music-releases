@@ -6,10 +6,10 @@ import dotsIcon from '../icons/dots.svg';
 
 export const Icons = () => {
   return (
-    <div className="button-wrapper">
-      <img src={heartIcon} alt="dots" width="30px" height="30px" />
-      <img src={playIcon} alt="dots" width="30px" height="30px" />
-      <img src={dotsIcon} alt="dots" width="30px" height="30px" />
+    <div className="icon-wrapper">
+      <img src={heartIcon} alt="dots" />
+      <img className="play-icon" src={playIcon} alt="dots" />
+      <img src={dotsIcon} alt="dots" />
     </div>
   )
 }
